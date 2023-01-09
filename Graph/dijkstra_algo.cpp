@@ -2,7 +2,7 @@
 
 /*
     Using priority queue + distance array and applying bfs
-    we will adjacent nodes in the priority queue only when distance to that node we found is less than distance already calculated.
+    we will push adjacent nodes in the priority queue only when distance to that node we found is less than distance already calculated.
     why priority queue and not queue? When we take queue it will explore all the path and when we use priority queue we will greedily find the shortest path for reaching all the nodes.
     TC- E*logV
 */
