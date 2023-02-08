@@ -28,7 +28,7 @@ public:
             {
                 for (int j = 0; j < n; j++)
                 {
-                    if (i == j || i == k || j == k)
+                    if (i == j || i == k || j == k || d[i][k] >= 1e8 || d[k][j] >= 1e8)
                         continue;
 
                     d[i][j] = min(d[i][j], d[i][k] + d[k][j]);
